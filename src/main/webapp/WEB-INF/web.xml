@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Lab2</display-name>
+    <servlet>
+        <servlet-name>controllerServlet</servlet-name>
+        <servlet-class>ru.ifmo.se.lab2.servlet.ControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>areaCheckServlet</servlet-name>
+        <servlet-class>ru.ifmo.se.lab2.servlet.AreaCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controllerServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>areaCheckServlet</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+</web-app>
+
